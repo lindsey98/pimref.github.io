@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PiMRef: Detecting and Explaining Ever-Evolving Phishing Emails with Knowledge-Based Invariants">
+    <title>PiMRef - Home</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://ssl.gstatic.com/atari/images/public/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">PiMRef</a>
+            <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="user-study.html" class="nav-link">User Study</a></li>
+                <li class="nav-item"><a href="wild-phishing-examples.html" class="nav-link">Wild Phishing Examples</a></li>
+                <li class="nav-item"><a href="our-failure-cases-in-the-wild.html" class="nav-link">Failure Cases (Wild)</a></li>
+                <li class="nav-item"><a href="our-failure-cases-in-closed-world-benchmark-datasets.html" class="nav-link">Failure Cases (Benchmark)</a></li>
+                <li class="nav-item"><a href="supplementary-examples.html" class="nav-link">Supplementary</a></li>
+                <li class="nav-item"><a href="psychological-trigger-evaluation.html" class="nav-link">Psychological Triggers</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1><em>PiMRef</em></h1>
+            <h2>Detecting and Explaining Ever-Evolving Phishing Emails with Knowledge-Based Invariants</h2>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="section section-pink">
+        <div class="container">
+            <h2 class="text-center">Introduction</h2>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <p class="intro-text">In this work, we propose the 1st reference-based phishing email detection solution, PiMRef, which</p>
+            <ul class="square-list">
+                <li>Debunks the <strong><em>disprovable claims on sender identity</em></strong>,</li>
+                <li>Highlights the <strong><em>call-to-action triggers</em></strong> on next-step engagement</li>
+            </ul>
+            <p class="intro-text">PiMRef significantly outperforms</p>
+            <ul class="square-list">
+                <li>Feature-engineering-based (D-Fence, HelpHed)</li>
+                <li>LLM-based (ChatSpamdetector)</li>
+                <li>Rule-based (Rspamd, SpamAssassin)</li>
+            </ul>
+            <p class="intro-text">baselines in terms of precision, and recall, while maintaining a runtime within 0.05 seconds.</p>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="section section-pink">
+        <div class="container">
+            <h2 class="text-center">Demo (PiMRef as an Outlook Plugin)</h2>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/JZXsIxv59N4" 
+                    title="PiMRef Demo Video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Assets Section -->
+    <section class="section section-pink">
+        <div class="container">
+            <h2 class="text-center">Assets</h2>
+        </div>
+    </section>
+
+    <!-- SpearMail Benchmark -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center" style="font-size: 24pt;">SpearMail Benchmark</h2>
+            <div class="warning-box text-center">
+                <p><strong>** This benchmark is only for showing the feasibility of LLM misuse in Spear-phishing Email generation.</strong></p>
+                <p>To prevent ethical concerns, this benchmark will <strong>NOT</strong> be disseminated **</p>
+            </div>
+            <p class="text-center"><strong>The <em>diversity</em> of topics covered by SpearMail in the following Figure</strong></p>
+            <p class="text-center">(Colors are produced by Latent Dirichlet allocation (LDA))</p>
+            <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SQZfzCGZ5vOL-bFCTl1g8oj1sMUeVwiUfqpCAc6uavGFr2R2khgImftg4YCvFMuaxwrjsRlHs1e7odzdUyBPu3NTrsIa5GwnmOJe1SauI8k7Z9lQ195vOsPL7smLl_6LBIui_wyAeYDFdBq1VTvTmZJ9T1Nr2GVFmUryhx5Pf5aFQCyVwUOHLfJmIr1C9KqvraZfHHJgJlg9yj5HlXOCg2vNExfUp0iokvimrs=w1280" alt="SpearMail Topics Diversity" class="content-image">
+        </div>
+    </section>
+
+    <!-- Datasets -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="text-center" style="font-size: 24pt;">Datasets</h2>
+            <ul class="square-list">
+                <li><a href="https://drive.google.com/drive/folders/1ORrWKNdaydCqh37ZxigPGRNMNTO15XQd?usp=sharing" target="_blank">Training and validation datasets for the NER model</a></li>
+                <li><a href="https://drive.google.com/drive/folders/167sr_8pIe6uJEXzWmbop95-AHHw4KAln?usp=sharing" target="_blank">Conventional benchmark dataset (Nazario, Phishpot, and CSDMC)</a></li>
+                <li><a href="https://drive.google.com/drive/folders/14-Pnz8XBen87WJkqZgpFbey60cuXm2HJ?usp=sharing" target="_blank">Field study: honeypot email dataset</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- User Study -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center" style="font-size: 24pt;">User Study</h2>
+            <p class="text-center"><a href="user-study.html">Link to the user study</a></p>
+        </div>
+    </section>
+
+    <!-- Models -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="text-center" style="font-size: 24pt;">Models</h2>
+            <ul class="square-list">
+                <li><a href="https://drive.google.com/file/d/1OqrhuKMOq8kjkKuU3jtPo9a-jA1zsJj8/view?usp=sharing" target="_blank">Checkpoints and Knowledge base</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Code -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center" style="font-size: 24pt;">Code</h2>
+            <ul class="square-list">
+                <li>Code repository: <a href="https://anonymous.4open.science/r/PiMRef-A513" target="_blank">https://anonymous.4open.science/r/PiMRef-A513</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>PiMRef - Detecting and Explaining Ever-Evolving Phishing Emails</p>
+        <p><a href="https://sites.google.com/view/pimref/home" target="_blank">Original Google Sites Page</a></p>
+    </footer>
+
+    <!-- Navigation Toggle Script -->
+    <script>
+        function toggleNav() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const navMenu = document.getElementById('navMenu');
+            const navToggle = document.querySelector('.nav-toggle');
+            if (!navMenu.contains(event.target) && !navToggle.contains(event.target)) {
+                navMenu.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PiMRef - Psychological Trigger Evaluation">
+    <title>PiMRef - Psychological Trigger Evaluation</title>
+    
+    <link rel="icon" href="https://ssl.gstatic.com/atari/images/public/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .trigger-card {
+            background: #fff;
+            border-left: 4px solid var(--primary-color);
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .trigger-card h3 {
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+            font-size: 18pt;
+        }
+        .trigger-example {
+            background: #f9f9f9;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 4px;
+            font-style: italic;
+            color: #555;
+        }
+        .trigger-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">PiMRef</a>
+            <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="user-study.html" class="nav-link">User Study</a></li>
+                <li class="nav-item"><a href="wild-phishing-examples.html" class="nav-link">Wild Phishing Examples</a></li>
+                <li class="nav-item"><a href="our-failure-cases-in-the-wild.html" class="nav-link">Failure Cases (Wild)</a></li>
+                <li class="nav-item"><a href="our-failure-cases-in-closed-world-benchmark-datasets.html" class="nav-link">Failure Cases (Benchmark)</a></li>
+                <li class="nav-item"><a href="supplementary-examples.html" class="nav-link">Supplementary</a></li>
+                <li class="nav-item"><a href="psychological-trigger-evaluation.html" class="nav-link active">Psychological Triggers</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="hero-content">
+            <h1>Psychological Trigger Evaluation</h1>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <p class="intro-text text-center">This page documents the psychological triggers commonly used in phishing emails, based on Cialdini's principles of persuasion. PiMRef identifies and highlights these triggers to help users recognize manipulation tactics.</p>
+        </div>
+    </section>
+
+    <section class="section section-light">
+        <div class="container">
+            <div class="trigger-grid">
+                
+                <div class="trigger-card">
+                    <h3>🎁 Reciprocity</h3>
+                    <p>Attackers offer something first to create a sense of obligation.</p>
+                    <div class="trigger-example">"As promised, here's the grant tracker; can you take a quick review?"</div>
+                    <div class="trigger-example">"I left notes on your draft" — "PDF annotated; sign in to view."</div>
+                </div>
+
+                <div class="trigger-card">
+                    <h3>🔄 Consistency</h3>
+                    <p>Exploits the desire to appear consistent with past actions or commitments.</p>
+                    <div class="trigger-example">"You selected direct deposit; re-enter account to stay consistent."</div>
+                    <div class="trigger-example">"Reminder: you opted for e-billing" — "Verify card to keep settings."</div>
+                </div>
+
+                <div class="trigger-card">
+                    <h3>👥 Social Proof</h3>
+                    <p>Uses the behavior of others to influence actions.</p>
+                    <div class="trigger-example">"87% of your lab finished verification" — "Join them here."</div>
+                    <div class="trigger-example">"Top journals now use our portal" — "Editors log in below."</div>
+                </div>
+
+                <div class="trigger-card">
+                    <h3>👔 Authority</h3>
+                    <p>Impersonates trusted figures or organizations.</p>
+                    <div class="trigger-example">"IT Security Department requires immediate password update."</div>
+                    <div class="trigger-example">"Your Dean has requested you complete this form today."</div>
+                </div>
+
+                <div class="trigger-card">
+                    <h3>❤️ Liking</h3>
+                    <p>Creates rapport or uses familiar/friendly language.</p>
+                    <div class="trigger-example">"Hey! Remember me from the conference? Check out this doc I mentioned."</div>
+                    <div class="trigger-example">"As a valued customer, we've prepared something special for you."</div>
+                </div>
+
+                <div class="trigger-card">
+                    <h3>⏰ Scarcity</h3>
+                    <p>Creates urgency through limited time or availability.</p>
+                    <div class="trigger-example">"Your account will be suspended in 24 hours unless you verify."</div>
+                    <div class="trigger-example">"Only 3 spots left for the grant — apply now before deadline."</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center">How PiMRef Detects Psychological Triggers</h2>
+            <p class="intro-text">PiMRef uses a combination of natural language processing and pattern matching to identify psychological manipulation tactics in email content. When a trigger is detected, PiMRef highlights the specific language patterns and provides context about why this language might be suspicious.</p>
+            
+            <div class="highlight-box">
+                <h3>Key Detection Features:</h3>
+                <ul class="square-list">
+                    <li><strong>Urgency indicators:</strong> Time-limited language, deadline threats</li>
+                    <li><strong>Authority claims:</strong> References to IT, management, official departments</li>
+                    <li><strong>Social pressure:</strong> Mentions of colleagues, percentages, group behavior</li>
+                    <li><strong>Reciprocity cues:</strong> Gifts, favors, prior assistance mentioned</li>
+                    <li><strong>Consistency appeals:</strong> References to past actions or preferences</li>
+                    <li><strong>Familiarity attempts:</strong> Overly friendly language, personal references</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>PiMRef - Detecting and Explaining Ever-Evolving Phishing Emails</p>
+        <p><a href="index.html">Back to Home</a></p>
+    </footer>
+
+    <script>
+        function toggleNav() { document.getElementById('navMenu').classList.toggle('active'); }
+        document.addEventListener('click', function(event) {
+            const navMenu = document.getElementById('navMenu');
+            const navToggle = document.querySelector('.nav-toggle');
+            if (!navMenu.contains(event.target) && !navToggle.contains(event.target)) navMenu.classList.remove('active');
+        });
+    </script>
+</body>
+</html>

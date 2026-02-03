@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PiMRef User Study - Phishing Email Detection and Assistance Tools">
+    <title>PiMRef - User Study</title>
+    
+    <link rel="icon" href="https://ssl.gstatic.com/atari/images/public/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">PiMRef</a>
+            <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="user-study.html" class="nav-link active">User Study</a></li>
+                <li class="nav-item"><a href="wild-phishing-examples.html" class="nav-link">Wild Phishing Examples</a></li>
+                <li class="nav-item"><a href="our-failure-cases-in-the-wild.html" class="nav-link">Failure Cases (Wild)</a></li>
+                <li class="nav-item"><a href="our-failure-cases-in-closed-world-benchmark-datasets.html" class="nav-link">Failure Cases (Benchmark)</a></li>
+                <li class="nav-item"><a href="supplementary-examples.html" class="nav-link">Supplementary</a></li>
+                <li class="nav-item"><a href="psychological-trigger-evaluation.html" class="nav-link">Psychological Triggers</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="hero-content">
+            <h1>User Study</h1>
+        </div>
+    </section>
+
+    <!-- Pre-study Briefing -->
+    <section class="section section-pink">
+        <div class="container">
+            <h2 class="text-center">Pre-study Briefing</h2>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <p class="intro-text"><strong>Dear participant:</strong></p>
+            <p class="intro-text">Thank you for taking part in this study on "<strong>Phishing Email Detection and Assistance Tools</strong>".</p>
+            <p class="intro-text">This questionnaire aims to understand how you judge emails while reading them, and how phishing detection tools influence your ability to identify suspicious emails.</p>
+            
+            <ul class="square-list">
+                <li>The questionnaire is expected to take about 15–20 minutes to complete.</li>
+                <li>There are no right or wrong answers; please respond according to your true thoughts.</li>
+                <li><strong>We do not collect your name, student ID, account passwords, or other sensitive information.</strong> All data will be used for academic research only and will be kept strictly confidential.</li>
+            </ul>
+            
+            <p class="intro-text">If you have read and agree to the above information, please click the button below to start.</p>
+        </div>
+    </section>
+
+    <!-- Questions Section -->
+    <section class="section section-pink">
+        <div class="container">
+            <h2 class="text-center">Questions</h2>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <p class="intro-text"><strong>Instructions:</strong> This section presents a series of <strong>simulated emails</strong>. Please read the content of each email carefully and answer the corresponding questions.</p>
+            <p class="intro-text"><em>Do you think this is a phishing email? Yes/No</em></p>
+        </div>
+    </section>
+
+    <!-- Question 1 -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="text-center">Q1</h2>
+            <p class="text-center"><em>Show to Group A</em></p>
+            <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SRh9zWf8pb0HIPJg1Dh5zghwtTUEq0LbvxkZK0-sehTdioIMdZhD0xse64VAloENNAjvpiBFWaZ2lQlwheOKxGNbWI8HflRWFQLJYwi_H8i1Q9Dm3DVzX083w-pYzv6GibZOLDHfAv97F85U1jxbkcUiA2XcB8y5WyY05k_E2Vm2-weZkt4dzIy_LXbV93HyOwreknboxXWYikDeDmat0amHBIKG-WHYuCktto=w1280" alt="Q1 Group A" class="content-image">
+            
+            <p class="text-center mt-3"><em>Show to Group B</em></p>
+            <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SRvNzQYTu9dfBbT_4n0kCbbsiU3OYd0FyvVkUhJ04M61o1VrXCniExng6gIys9OVV-23Xti1U4FeOtav2nlZ6r-07ijFREi_L5tkn-iKP7EW8WboLf-KnvYWekGhVrOjhzEg-ay_VFmYCR23rF7EV1nJG5s2d3tK8Q3NuEZTxbHSt0ydB3BXnAC7tqnjz6JZeRR0owmPvhDAQTR4u-QepKnRjZV5eYLKp-u24Q=w1280" alt="Q1 Group B" class="content-image">
+        </div>
+    </section>
+
+    <!-- Question 2 -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center">Q2</h2>
+            <p class="text-center"><em>Show to Group A</em></p>
+            <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SRX1IR88pcGMh1DDDiW_EUNkAH5WQtXlyuCy68EIRGzfHOd0ak_AobDdeiF8Rex6w_MON29c65h-IVMZPGbmrMRrtZI33EtZxxsIhXPI4zjQRmOaF9hzz5v04h0JfMCXrVbVR3Cko-FyHGbIyvddJiTVRJ2FJ7WAkPlxPkO-tYmo9mF_j9uUkUIiQPUvqZY1yJ492DGtH25xodTEA0i1ihQbAejS80y8NA58W0=w1280" alt="Q2 Group A" class="content-image">
+            
+            <p class="text-center mt-3"><em>Show to Group B</em></p>
+            <img src="https://lh3.googleusercontent.com/sitesv/APaQ0STboVq-aDG3vKFgvmsHDpsShgRMnvyCx6Cw_wSWqQBALA4UnpplmwJZbfkkbdkaS2zzCH7HzUH13ahQhBrIxRfUbnpRA6Msj6Y0bmLnp88Y-usNItjtljkT1apkAr0g00_99ihXw8hKaBylFFyptE9fBBgZA9Mqgma5OCWIazP3sBp6ql-5xIZ8pT0HJSr3fb6Q5c5bahYya1WRisSCYLvEDsZ3Z-ucwTzC11A=w1280" alt="Q2 Group B" class="content-image">
+        </div>
+    </section>
+
+    <!-- Question 3 -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="text-center">Q3</h2>
+            <p class="text-center"><em>Show to Group A</em></p>
+            <img src="https://lh3.googleusercontent.com/sitesv/APaQ0STnhni-b5YlfQmb4iG5zGv24EmZQElyvSikOVRVtpFJJ1hWqfYJkVCceNAM1xgOi5gaxznlBDur5OSin0E-kleRJdSqS079wVZsXNbEe5AfxguZ7h3QaitlZWxPDhBkvwJDL7s8oQF7EwhOsVg9a3L9MSptm4eigW-QPZYoIQnZpmyW1U-wWHNlZ4UUIWpnmn-GlZQqoKan6lGvGfcRcZFzIiNNb0svN0BJzJ8=w1280" alt="Q3 Group A" class="content-image">
+            
+            <p class="text-center mt-3"><em>Show to Group B</em></p>
+            <img src="https://lh3.googleusercontent.com/sitesv/APaQ0STXLty4KDmkQhDXXu1WD7TfMwbemRvBMlwF1pM3b1r627tM62_zObPvpKfxa-B9F2nhgY5lfcWSStPyQsHwnf557Z2HS-JHXY7czQioS75dKq5sG9r61tCx0sFr6XT0xx6pMCl-XQTXJxFpdx-iKumJReBw7q3FpSxFDGAVWjS2hk4WUakaN7jAUv3sigYiwbEspKaQuKJW_mEU-DamhB4gKorwYoqQLICYYkk=w1280" alt="Q3 Group B" class="content-image">
+        </div>
+    </section>
+
+    <!-- Question 4 -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center">Q4</h2>
+            <p class="text-center"><em>Show to Group A</em></p>
+            <img src="https://lh3.googleusercontent.com/sitesv/APaQ0STzAoXpu-zOezoY0Su2Cz0btMxXJdvBMKB7JVaYu7XV-mTkC8V9xPi2mOxJjcerJ7qlFOgeKvK2dEf_ZlHmUirsew1jmOgfPlD8O8wpMuOdgHD3RbAbdhrbtF4R7M72g7o4CIjKhjfMP6U3sPITbQvFS4yefj8vVx-cxTdvtgZe3pVbeAnkKUK7rsCYQFiiG_Am8CrQF_yeiaEVKUqkIFLmcn0NcwPKioF_=w1280" alt="Q4 Group A" class="content-image">
+            
+            <p class="text-center mt-3"><em>Show to Group B</em></p>
+            <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SQRndpfcier1lF3EIKBKJiREniS7Cvto2JNNjrXiYilGytQmK7-YTsI8Y2T-HIH_egngFRSuRKOO_N6UA59nWdmFU3_kbKd8_mSGwWs4_M7p5Zow5VoPHGpPdPpN_A623rrlXADev26NvH2EYyGvitGo-6dD1K5B-Pm2RjeuAXofETo5dTdRT6lrcaYCo-1Eva-g3mOfC09BHnedyXxgDAqIdYgwYy1hksUDsQ=w1280" alt="Q4 Group B" class="content-image">
+        </div>
+    </section>
+
+    <!-- Question 5 -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="text-center">Q5</h2>
+            <p class="text-center"><em>Show to Group A</em></p>
+            <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SQ62Jna3-cjGQwa1p90n9Tsv1wHvlmCCh8-OoM89zyrisV0RK1WAx3fX59vB0-d5xsLxirWq0sWeNDOzuVh7LY5RA2rBqAMuqY3aQ3NQljqKSJ3At2NWj-QC3U1YJXE4miYsGyy5pd9SeC1q9Hn-VJ6mHOC8D8pwz-UGM9i16HIFNLpgL_cEsg8n5MU01slsJ8vkOoV6tHNsonHflo76Di6efXoScn150LhMfE=w1280" alt="Q5 Group A" class="content-image">
+            
+            <p class="text-center mt-3"><em>Show to Group B</em></p>
+            <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SRfsLCte5M54uRH6xvDVIAXTs7-N90vJGfjxGyLcd0nqcXbLcFgQvsqfeGNLo6YTHcvh-KzlmvE_yAvpQ_oYpjSWRdCaYSlCZFZrR8GgGo0T1S8JgkmEN8z20vVoluLTLPNFxGav-gPc7mq28JHqTLY1L1zHO27tSby2UwxXGW0rfgdOFvNurlfbxhnePMGYJaGGBVy_uM1964Jwy76pFrp11X_9T68VnFEdOY=w1280" alt="Q5 Group B" class="content-image">
+        </div>
+    </section>
+
+    <!-- Question 6 -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center">Q6</h2>
+            <p class="text-center"><em>Show to Group A</em></p>
+            <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SRW1Yawn4tNqwzUPguU80lQcdze0XdDJQcHTce-mkCddz4cUuw_Mzkp8q-xqg9lHt8utp5W7OFyqvW57W4j2xaLQyg3O6hqxeIJuaNsC87P7e50lvamLiedi0HHb7u3AUc74kN1w1PCQx0oFznIv71TzLqeIU4LS9gApp9C6-mzgWzyFOnF_jA0K_5i1EBfyOKuzFY3TSpITi-HLmf7ocoMu1xl3G4zplKJDns=w1280" alt="Q6 Group A" class="content-image">
+            
+            <p class="text-center mt-3"><em>Show to Group B</em></p>
+            <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SQs-wEZm3ewuCRjkpbtD1fy0DlVRSxrJYLvC39PsPRdJY-ZogXXRmjhCN9QrRpOhHDGkFHYwufNLH30UZyRvehjj8d4TAbJpJn4CcExeHts77CFHXu9jCU6fdQKwM0bGS3ZpQ9EEy4X23RnkXeDdeZ_Yi2IrZd6cdROeFENK4DO1DO8e0mdT1usD5fZI8QTWM8noWMSVI18kU5ilBrV_5lqmiXF3pai_y-9=w1280" alt="Q6 Group B" class="content-image">
+        </div>
+    </section>
+
+    <!-- Question 7 -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="text-center">Q7</h2>
+            <p class="text-center"><em>Show to Group A</em></p>
+            <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SSUdLiwcyjn49Um-O2cz8emR7sVx-bugx5x9i-c03zddMUS6GBcBksCP0dpZzgkGG1z4zfgXo-klp--QoQlv5ys3RmQRVS2-AY-pDQ6kqQpOglF-vlfWhh0FvfqT2ile3GrcXLr66rpk4iK_iLDIvM7wGv-WnSpPS3hPm2sjvO33nhBHfAnvea8_Qd1VvinQzSy6WufW1OmGO75oDJgrFTuJ4rUWpOfX0xbOPc=w1280" alt="Q7 Group A" class="content-image">
+            
+            <p class="text-center mt-3"><em>Show to Group B</em></p>
+            <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SQtDDAf3XvV3KdjtyOuli2ndxIRS9DP4u7fX_c8sGTCmbbuFBbQWOi8_yfEZwtw83J9UQzIWLdr4DjDnNDBgH-knPwu2j0fJ3PL0fNAZEU18-DWZiGII_0L-dkHkJoG2gvZwBu1HP-uaInAaMPfxTI7fN-iQJB_3Pi646Y5EE25en8DHi6l06J1sbVtq3h_CiHWP0Xzt6twncoIiN2yd3lXGZteoA6YimAga_A=w1280" alt="Q7 Group B" class="content-image">
+        </div>
+    </section>
+
+    <!-- Question 8 -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center">Q8</h2>
+            <p class="text-center"><em>Show to Group A</em></p>
+            <img src="https://lh3.googleusercontent.com/sitesv/APaQ0ST5r0Xj95rxEdfwv_Wut-dWmrnrUJrHb2prA5yH70swgl7fbk1eQfU5tRJD_SPLx5ygT5b2-uBAEFOKoQX4Q-gzaJk1izH8U7gSI3WF___jUIFf-7pDR496uKoosx4vQ4iQpbPPw3CvDp3PYXDnpXi3NkcnYUkzSdtWTzuyloalUq65qlkFlqmdOw9nRioUWcl_hRlU8mFpYlDsyKwazlVjb9EocB415SfK=w1280" alt="Q8 Group A" class="content-image">
+            
+            <p class="text-center mt-3"><em>Show to Group B</em></p>
+            <img src="https://lh3.googleusercontent.com/sitesv/APaQ0ST_NRBhkmWQltSXKkgpORBxAEsqOu1zjCVNd2yJIG540YflMw97JsvwtNw68OeOc58swafWRxP3mOFABQD7u36d7T8Dpc1TqWuqdzPigM38apojxoVh2FlBkdXjNWJablc_f18igG5len_viaQO-ZN3nRxucR5Eb80k0P-bv7VoxCqggWdVq47DwjTqQaILAl1oiWLAdcOFoOWzW35o58puDqqyJ5N1srUA37A=w1280" alt="Q8 Group B" class="content-image">
+        </div>
+    </section>
+
+    <!-- Question 9 -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="text-center">Q9</h2>
+            <p class="text-center"><em>Show to Group A</em></p>
+            <img src="https://lh3.googleusercontent.com/sitesv/APaQ0STC_Z8u7Kq7smwaM4X6uKgxXf66XAu1Skk9a6SYENjUx8R_UM-nX65Ukgga3mRdH--0EankXLy7k8UZtMoLNYJuvHvGfrYwfLgy7iEy3_SQsbi7FUrX147ECrcQl24QxwyoehbrrzMElp2gxNyDSWC7xK9NmO_nmRG6Sl89eM_LMr-Dqb6r2WRDWu9iqf89jcmE7_T2HjrbQ2x4ZFcfG-5dbDBjQ8I2pPL7OA0=w1280" alt="Q9 Group A" class="content-image">
+            
+            <p class="text-center mt-3"><em>Show to Group B</em></p>
+            <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SQII6q-QKcCbUZTEOCfcHAqP3gAY1W5I-GCcFJKgUV-4-4uOJKs44yH5rIVdvu7AVOX0gjBVQKVXFuzpotcGSv4gtmd3ej1F8OZ4QQhqNJ815dy9H8ZM-6H7MDoEedpTkCctl--ylp0g7Qwa6jkEPd0ne6Ud2zIOsT5XiaQHI0L5RuWPGR8aA-gLN8Q0mnKk__T0Mjg7Lk_k3NhK7GCCXa7liSxcmFFEA=w1280" alt="Q9 Group B" class="content-image">
+        </div>
+    </section>
+
+    <!-- Question 10 -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center">Q10</h2>
+            <p class="text-center"><em>Show to Group A</em></p>
+            <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SSo6T6pIfpJG70ZKwl68o9uZKWiOamexmeJkSXmLtae54DNwumNVlK0PhaU0H18b5fivlGVGt92n4Gd8I0ao7KmaESr-3ew2m9TpsWxQ--G9KRLhTkEsG5xVFBnPLyp2-XayXETW8ZiZ3-4MCQFZZ7X4c6VT8GErE6_4h9BcnfuVuVy6Q16FGVJQfPiMHQ_qavGCD8OOWK-3sbB0udV4jZl4V41TP8M_As7-Hw=w1280" alt="Q10 Group A" class="content-image">
+            
+            <p class="text-center mt-3"><em>Show to Group B</em></p>
+            <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SSjR05PlA236HKeNK6sIuJssaLPPRFKsRwcYkQb9suaR1M2FLF9rPTJ0kuq0k5rjjDVGWAW98yZHci5Lmzvmg81lHYtmS__b14EX9ds7K9H23JM7KFkNYKvY-0zd0wpYGHdIVGAF0RcZiGTyQzwoKfSEwTd6ZXDH60TaW-wGRuUyAmIjQo_J_ln0SEM2_nG25jojuqIWXuJ_oTvc_VlHM_OuxUkl5Q2nBiZyVs=w1280" alt="Q10 Group B" class="content-image">
+        </div>
+    </section>
+
+    <!-- Post-study Section -->
+    <section class="section section-pink">
+        <div class="container">
+            <h2 class="text-center">Post-study</h2>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h3>Q11: How difficult did you find judging these emails overall?</h3>
+            <ul class="square-list">
+                <li>Very easy</li>
+                <li>Rather easy</li>
+                <li>Moderate</li>
+                <li>Rather difficult</li>
+                <li>Very difficult</li>
+            </ul>
+
+            <h3 class="mt-3">Q12: During the previous task, how mentally demanding or stressful did you feel it was?</h3>
+            <ul class="square-list">
+                <li>Very relaxed, no burden at all</li>
+                <li>Rather relaxed</li>
+                <li>Somewhat tiring / somewhat stressful</li>
+                <li>Very tiring / very stressful</li>
+            </ul>
+
+            <h3 class="mt-3">Q13 (Group B Only): How helpful were the phishing-detection tool cues shown in this study for making your judgments?</h3>
+            <ul class="square-list">
+                <li>Not helpful at all</li>
+                <li>Not that helpful</li>
+                <li>Very helpful</li>
+                <li>Extremely helpful</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>PiMRef - Detecting and Explaining Ever-Evolving Phishing Emails</p>
+        <p><a href="index.html">Back to Home</a></p>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+        document.addEventListener('click', function(event) {
+            const navMenu = document.getElementById('navMenu');
+            const navToggle = document.querySelector('.nav-toggle');
+            if (!navMenu.contains(event.target) && !navToggle.contains(event.target)) {
+                navMenu.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

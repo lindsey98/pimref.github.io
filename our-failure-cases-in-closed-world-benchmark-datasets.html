@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PiMRef - Our Failure Cases in Closed-World Benchmark Datasets">
+    <title>PiMRef - Failure Cases in Benchmark Datasets</title>
+    
+    <link rel="icon" href="https://ssl.gstatic.com/atari/images/public/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .gallery { display: grid; grid-template-columns: 1fr; gap: 30px; }
+        .gallery-item { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .gallery-item img { width: 100%; height: auto; border-radius: 4px; }
+        .gallery-item h3 { margin-bottom: 15px; color: var(--primary-dark); }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">PiMRef</a>
+            <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="user-study.html" class="nav-link">User Study</a></li>
+                <li class="nav-item"><a href="wild-phishing-examples.html" class="nav-link">Wild Phishing Examples</a></li>
+                <li class="nav-item"><a href="our-failure-cases-in-the-wild.html" class="nav-link">Failure Cases (Wild)</a></li>
+                <li class="nav-item"><a href="our-failure-cases-in-closed-world-benchmark-datasets.html" class="nav-link active">Failure Cases (Benchmark)</a></li>
+                <li class="nav-item"><a href="supplementary-examples.html" class="nav-link">Supplementary</a></li>
+                <li class="nav-item"><a href="psychological-trigger-evaluation.html" class="nav-link">Psychological Triggers</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="hero-content">
+            <h1>Failure Cases in Benchmark Datasets</h1>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <p class="intro-text text-center">This page documents cases where PiMRef failed to correctly identify phishing emails in closed-world benchmark datasets (Nazario, Phishpot, CSDMC).</p>
+        </div>
+    </section>
+
+    <section class="section section-light">
+        <div class="container">
+            <div class="gallery">
+                <div class="gallery-item"><h3>Case 1</h3><img src="https://lh3.googleusercontent.com/sitesv/APaQ0SRuOD3UkCaMJboCjJ11Mckn8WnkbUoneg7Y8KOjH0ia8J4rll0ZTkR2x9F-kASlV0YuKqyccZgHFPAh2ogBBLqUptNhXUtBUEmZSuRCDrjopGh61NvNSPevrkIWS2wa_FMWLUUI8VT_63XveRzptqbVCzIgVMnowlGS5_Z0HCrZ5yNsqI40Z_1sW00FUC7-gZzWcVNdXyoaF_khuiF-jFnZBvI2Q1TF74NS=w1280" alt="Benchmark Case 1"></div>
+                <div class="gallery-item"><h3>Case 2</h3><img src="https://lh3.googleusercontent.com/sitesv/APaQ0STNHIbLWmX_LkKtwU61ot-CMrWT47AHmbqC3mivB-76IdOCgE6PqCXa_FRmSWYZNMeuAbPAJ7Soane3c6yUOXbfXQBnAoCYh7IMVQUfVKaz19Ss0eHZo5rmoeKiHy9QaYtIg9YZCAFr7pYtRbRaTSRJWRyDAMeTXUHJD-zLm2Ky1aZvScb5XDZZs0sE7YLCl8fQw4l7iJEV9yE0GXzzAVLFohOm4ebO9xtD7TE=w1280" alt="Benchmark Case 2"></div>
+                <div class="gallery-item"><h3>Case 3</h3><img src="https://lh3.googleusercontent.com/sitesv/APaQ0SQaXk4HoqoBu71zEdnyNu7ImVb_4gB5EJw8LeHPif1udNC7SkJOxX9d-OA2D7vKPbgJH3YcmDSBzc6L0UkdqrhyrC6Gt-HRgiUWbb9sywZzu6VJC9ghpRbX6oeCvCLtT7Ng-K_RS5aDA-ZtxMNOluwZqRPLBuQxv_k9SD9Q5JOt59Z29xGkPwUjsig=w1280" alt="Benchmark Case 3"></div>
+                <div class="gallery-item"><h3>Case 4</h3><img src="https://lh3.googleusercontent.com/sitesv/APaQ0SR9GE6H4PV7iNPci9-DPlF5zM6kKaTT7TDBAiLy2rMpP5HxXKkzGQQduDJ9sd-I2R54Jczt5zyUiv2wo9s7m9YFwxC0X1JyjQK1hXAJjfaJJnQjZcD9Z0W2qk7eF5uGFFptdAVyt1nOoNdDkNzM5s6ds_1PFesUFM0D_WOIxEQLX7_Ge5oPh8Z6zgncSHiPZjnkPt5UILD25qNip8UvkoeDxLfIHIjKZH1iJN0=w1280" alt="Benchmark Case 4"></div>
+                <div class="gallery-item"><h3>Case 5</h3><img src="https://lh3.googleusercontent.com/sitesv/APaQ0SSA8iQSFAGgkdKsN0xLtRTnsqXItR15suDZcxq-LzeEr302L1nzadXIDqbpW1fd3V8jGwFI8B_AWbgeRvKgsPDICsgdEzxZqElt0j-ZMleOUh7LziiHW3kUdZs3xeotSYdm79SXnJ3Dm8sLXY516bEE5u-0uV5ib6S7Jq7aSXaPG4DvuBNJjYbmJNjeUblh5yTgbmFv_jsuYTWwW42eDkSrPwkW5mo2mAC8diY=w1280" alt="Benchmark Case 5"></div>
+                <div class="gallery-item"><h3>Case 6</h3><img src="https://lh3.googleusercontent.com/sitesv/APaQ0SSP728kSi-YV11tENPsan8Han9CMIzHslaDxs93c7bS_xJjRYyxspTySrzaKiZvzIw8sQ1yOatDYsDsvSFFWac7-n3paF4Chc23jXLXQfRKrgesYtUQkWU2dmdbR6MbBm96KWPiV00tLZySCYkBzdQDm2caoAGDmmwqPV_vKSziSsoqA4ZJd51T_jTHTKs-quDb8vSf_7FSM4EY9SQ1xs1WAAzdWad15tCDx30=w1280" alt="Benchmark Case 6"></div>
+                <div class="gallery-item"><h3>Case 7</h3><img src="https://lh3.googleusercontent.com/sitesv/APaQ0SQS9yur-GFjOl_UIc_5vT4FWJAZKFGyrOmJ_H_9epBjdyEkDbX5iCFvTC5zhZAbdNwZO0nnQzs4mqw6nZ1VUCCiQmarrcQlWNWRJvLMHVdlkyiXXbHpslcWRZAEXgFfi2CTNnWgIKaB3y7O7DDUfDKtWtzciba6VrFhRIduGc8YuJ5FVwwRyj_nIOcvgvSCBoRc28Wkf67KHKgkVdYc8tNORfO9TuRX6no=w1280" alt="Benchmark Case 7"></div>
+                <div class="gallery-item"><h3>Case 8</h3><img src="https://lh3.googleusercontent.com/sitesv/APaQ0SQoQs3p_f45SUlSyrq0qQNkB--sN5EdYxhdXOWHlqKFmxVXiXNem1JScqGUrKTomSYn0tZIc4Lm_MSCPN0lWKD2Y6ndftiW-6totEZs8DLQsVn2BX8QeBVLJa91OYb5iVa8x8pNZaI-QHwWDeCtYNUuD3c5TXwh-vRDw_U9Us_rSBK79DIwxacHcuOzfVBx7Ai-gDUXh2Bm82PuWQ_Xzvl1euZlZ2SLHDEN=w1280" alt="Benchmark Case 8"></div>
+                <div class="gallery-item"><h3>Case 9</h3><img src="https://lh3.googleusercontent.com/sitesv/APaQ0SQsxOMJ-G_zWxYM9g37BUSX7aunKbutQaVm-LoYFzAalwedvVZO-IILSnFq3FPjhpeoP1vyvib6-sJqQe8P9xcbRXj2F5H9djbnyibovSJcZThQnb_I4aF2dAScQ-IueLGyxPboiksiNaiCuzbxBarx1M17_iSnKsIwAs9BJoaWPw7AxUHJJjRbEN3QO-ckVNde5T8mxLkLu1jhox3EvlQyPmXTC7lx6v_e=w1280" alt="Benchmark Case 9"></div>
+                <div class="gallery-item"><h3>Case 10</h3><img src="https://lh3.googleusercontent.com/sitesv/APaQ0STjdMzR09Pqz4myPh3Lk60K3QXSLuVRRZ7UhNBGVgYKLjvUf4ou1qg9oNhJVdNSdoQKc5CWpBXeXSypIqcyQupnOvXtEq_F7QByD0ZutXrdwsvouo_QnKMw4PYGdCBGSoJv249IiKeSfSYI-XtKXndKdMIz1E6SqF1zK6iOnk9yvLkQ1-sqheKs65CXRihOo7WVFiQsZDqtSxfraseO3CgnhyAKM2ki8wo11-w=w1280" alt="Benchmark Case 10"></div>
+                <div class="gallery-item"><h3>Case 11</h3><img src="https://lh3.googleusercontent.com/sitesv/APaQ0SRY9vIqInhXYmjN-utrntIi8lFstXAJIfsAbpu59FOl64TptftsyZasIB2mZgTHZ1dXWA9X2b6crsghPD1GG8anTU-Sn1h-BVCFfMZKXJLwMSnxzpqXsGPooL2HC01ZECQkq9vWHiw6M89YTF_uSXVl623OPFiPkOHmVaosiXlE5_0RM3xkeUqfAhvvV5dIBEoBnarO6QVu69L8o2AWEufGe_b2MMzk9hI3OJ4=w1280" alt="Benchmark Case 11"></div>
+                <div class="gallery-item"><h3>Case 12</h3><img src="https://lh3.googleusercontent.com/sitesv/APaQ0SRY-glPoVzHLLcbqnIEjqNLJJbYM_L28VQPJsq7HgXMzdqDyNdwe7kGBroMqCcNAuMi3BjClIltTnuVCwni5Raz799I0mAh-PRoeqalRCkOPaUbC99LD3Tf-AU4ljVILd4d2-_1hkttBsscFuIm7Z3v-HowDT722hfNYcX6ZfRoZ539Y4KNW3WtV-H-7bJ-VXIno1o-MNWK5mME0q4fSG4ZDIpeMv91TWp3=w1280" alt="Benchmark Case 12"></div>
+                <div class="gallery-item"><h3>Case 13</h3><img src="https://lh3.googleusercontent.com/sitesv/APaQ0SQVXxX8S0PpzdnkcGS6B0wXFVGkEQmJLRiRS4hHxJGyA9-8CIFlFbO7ZT6aGVbtBrgTKnnwyjFqSRMcxzhjQgWzVu3a7DVnJVmTSc4PqqgOh8oX-14OKc5vrXk7fOdFQjedUvGK9-6wje0ruLxngFw83xy7sjx2EjX2Lb7HPINA2MVFJHNwYguKQ7toU6ZxwrYnyrXOZf-qUc8Kl6PGjHeDbHdC7EUcAyJn=w1280" alt="Benchmark Case 13"></div>
+                <div class="gallery-item"><h3>Case 14</h3><img src="https://lh3.googleusercontent.com/sitesv/APaQ0SRgZtYRlKhq2cgyOJChlw_laGpmGe7JqDC1S8KNrMAfCoSl6iLYnWn8348ErK87lcAyGHCc4J6UNcboTOhWPuE6ZARz--Xkf2E20ADn-A8Hlb6gV_QUv7UF1Hu3yx034L7hZgps0OXhF6tFZYENvi4dLDXCMLxavX52rJanCx4BE0cCr7bBlbi3018WXk-wjSQ8Ce2bBaCFa4y8X3kzg-Vi2Aif7__EIS1L=w1280" alt="Benchmark Case 14"></div>
+                <div class="gallery-item"><h3>Case 15</h3><img src="https://lh3.googleusercontent.com/sitesv/APaQ0STwixZxzPkWRq2hRNFQfofMX4tKhgdMEOaIIj12UrgWcewkNqVtRYKSYL8xW3vXUyTpyi-ll4c-XEdGn9qrvaUaX8Rqqvi06NkZ5IijsLL-vvd1TY_FMuQ1RcYVfjfUT-lXA62KY7kNt4Ng-2kXZ9PjVb9bVkKQesBsjeHVLKjekMRNZCAzFqdylxWqHNvdvUJgpdyjxLJgvOHv8hS3Hnu7wJDPbeS3aZz0=w1280" alt="Benchmark Case 15"></div>
+                <div class="gallery-item"><h3>Case 16</h3><img src="https://lh3.googleusercontent.com/sitesv/APaQ0SQSDY7rgIc5mxzv7N78tGrIDyUqIUcpSqJPGmb6-unZdCizkot8HeEFDi1BsJMHKzzguDS2bmRYQHm_o2aczRrsqpVksRhcdj3uGcehnblPUet8gX6kxu7V9fmOQoACXp4PC1wKaMgviD9qbJuK3jWKz6wO1xoFY5QXKRyjVRuFj-baLphw12MaJsUwn9YU2nnaKkJKsDpTBpRXWQioGhoy1_wGHIoX-2arTtU=w1280" alt="Benchmark Case 16"></div>
+                <div class="gallery-item"><h3>Case 17</h3><img src="https://lh3.googleusercontent.com/sitesv/APaQ0SRl1V22HhYx2EMO_Fk_fAHd9KF5PTsgvaTwnjUGy-xxRjb9nCTpn6uw22_qnAg3AK7SxVimB7wW0d6Gm-A0QTFpD8RYJ2ivkZmTR_5IrFmOqGy-QUqgYRvLRU37hPbVcfaAVKbaZgob6o6IGlcPYoK9YjNh-3X5eNsHVHAV1VH6C9WjyRWyKxbDuMf6ohd9UWWlS5TWI7sB4_puia9CJ_wy0iu7S_8HwNSy=w1280" alt="Benchmark Case 17"></div>
+                <div class="gallery-item"><h3>Case 18</h3><img src="https://lh3.googleusercontent.com/sitesv/APaQ0SSTQBn5yy4iDljj6ckXO7vUkAD2RxJi4zJ1QE8O7zztTOi4NLoGwbRyq_ioRYNs-4Inf3Yrb2YtJKdwYHbANmXAi9TyVU5ETULyyLK-B4xTAIJQWgBP7eM0ZY3_dhEI_W0HGWBKQNKpZdQwtRywKNsiALXD0Yjj3IM0s39VPowqBB2aQ8OboRPKx3cNm3f1PXQEI8pP0m4tzK0Ig0O7T4aB9PU1t6SGhwrjkIo=w1280" alt="Benchmark Case 18"></div>
+                <div class="gallery-item"><h3>Case 19</h3><img src="https://lh3.googleusercontent.com/sitesv/APaQ0SQqj_U4S9TkxKwDLTlwElL8A7PhyAEXJqh_cy2gzHGRH9cgNr_wQdMeDsOBZ91LDBou1IBGzENf6krmnox1ErQB4QIBsa5A7zhE2q1xPzp3aeMD0rckTnYqmTLfIXCk-2Z6WEXjO00Ra2nSYtMb9zvlFKqvNyivCgyxK7L0KDUp4Lx0WQa7NmWJPvnSk8PivQt8932DlmW-ujc-WlEkK082ladDgqM0uB88Ih4=w1280" alt="Benchmark Case 19"></div>
+                <div class="gallery-item"><h3>Case 20</h3><img src="https://lh3.googleusercontent.com/sitesv/APaQ0SQEvW1A3Ir4stQTtaV9TDV1f3oRgJyele_bRA8Un3P4DNh2mY2ZsOkddHRtkweN7DhYtTJ-SeflBIbovl4KxtpF2eFUxADfdXFRcGulXVZUXY6T6YYx1h6bmsOaauVG21B56u645_W1Qcm_aPMJ3zGZG2csn5HEuYO7FhK-PYGAoCa0QT5gu6HHbJ6_dyon6-NCc3Eqd_Dytlamke8-vJA9bRNVbGfKpxn_Np0=w1280" alt="Benchmark Case 20"></div>
+                <div class="gallery-item"><h3>Case 21</h3><img src="https://lh3.googleusercontent.com/sitesv/APaQ0SSR9z3dVFgy4r2eoluDhvJNUe_BycKq27XBzU6PQluCD7mGZTe_euAVRxtxpHsiB_56SGuqmrYba3x9O0jNdCNtGdWH72rB65BbrG7nTGxaxpa9DO3j4I-yVmGsC68cagBbwXHK61-qdGB0IO9RBIzIDHyIMpGODRs3Ia07pmMQe11LHvXlL7N9RpvXQT2H9jwsevB2yhCTgoDejd6PGM4lryQsk3o3jZ7V8ec=w1280" alt="Benchmark Case 21"></div>
+                <div class="gallery-item"><h3>Case 22</h3><img src="https://lh3.googleusercontent.com/sitesv/APaQ0SRfIUmTvbR8-KGIuM-mfiAx1S0dCYUblQyHkpFG6ECIT5CmIDx0N6sfSovMz_rVDRS48GxLfGxA1O9Frm8KlYrUfwWqEiytM-btBn5uwJyLMyjZGdoLeFBDT0UYVDNXFGK5woucU50zFurEHL03FTTg5eTizCtLHx9zi-3yfoDNLadjYR9eUDiHhG-DQtSN9WaCeKUbseevMGuWtbZ17hHTRP2FlrQFdV7ZzD0=w1280" alt="Benchmark Case 22"></div>
+                <div class="gallery-item"><h3>Case 23</h3><img src="https://lh3.googleusercontent.com/sitesv/APaQ0SRiW0mXhVVLvxojN6EiwEOgePCj-LS5jMpMaq9-qraWyQXrRIU4vBMnSvuzXV6kUwnXRzphaMXBeqcrb32xARYELVbrbBmLwBLpILtUL3i_zjKSPqW9f2szdMX7aiM_kbO2UL2Sv8npaYOO4FopVvgmguPNFnyc0FjNKs-ZHpa0LYszCM-G90A6XbfupFF6premgomghEuNxu59xt-GNFBmKLDC6j7LpZqIiJU=w1280" alt="Benchmark Case 23"></div>
+                <div class="gallery-item"><h3>Case 24</h3><img src="https://lh3.googleusercontent.com/sitesv/APaQ0SQvLw7DDdrWQ7Tr5kyE1fuuH4xMpMmANgBI8hwhBmnNx3hr6uHmVJBvjubu-KSbcTkrhfaIVRhehqcyf5Yo1vctX_9W0cCpUYNyRM_0j5WHpD4ff3yJ4Cii4PePfEkhAaOcbwET1lhsF7xy58K92213lxLxmlLnVUE9Q7oRJOyMVXLIH3S8S7xwkXST8fjglPbZmdAKqYe0MdUaK7VOgPWormds9-JIIdPn=w1280" alt="Benchmark Case 24"></div>
+                <div class="gallery-item"><h3>Case 25</h3><img src="https://lh3.googleusercontent.com/sitesv/APaQ0SSLWxskNdsVadamarBBq9AbRZYyx4E7r8WpxTzPXH0b_YgnCYFNa8snk__vvUI4-ks8xSoQurNwObQ7D714TTSNWxv2DZSpJq5B9blhc-FBK77JfAxxgf9BCZgaAT6TBf7fFG3MzUh0G6yZm4nPWD7AIOv5X2SCwcB1G01Go2n3V7tA2GFOc7EH7bBymujRkaNByjdces0iBevvuu6LnTOs7oNNcgG3L6_EWUA=w1280" alt="Benchmark Case 25"></div>
+                <div class="gallery-item"><h3>Case 26</h3><img src="https://lh3.googleusercontent.com/sitesv/APaQ0SQRmZJ0neyt84YFlkG-xELRNzkNhkdNXZ1n_odTFJ6kxjtabVrGVaqKHTgB_IPfey5py4YxQRipQvZ8me94-e74IiGRC6Tg-ZUTuhM-ifC0aU2Rj9tYGERm1aWxdd7Qg3XY0bGqauFfq3T3WScIlk4ekPL706Eb9H3WnOIbSBYCWv7hz0B65OzUeB25kHqA229k8jlxXeqmFUbHopKMykSlZe1k7iFGbZoXT_E=w1280" alt="Benchmark Case 26"></div>
+                <div class="gallery-item"><h3>Case 27</h3><img src="https://lh3.googleusercontent.com/sitesv/APaQ0STMqUnf-LXk8MFOxRiK28OgtgqV6wULQXfpt4OGU_kWI88XNkSCnQzivDaz3KezcxLbrs38cc32jf1uHMJCF16DcbIJuwFHFDY5rrd_iLxO9ICI2B8VUSdri0omX5xEz9RI-PC5ZVOkfqBY4zkfQO6RvL3r3ZetkrNXc3x7SZWbvMeTKytLLxUnhf3Pjyu33l8IzrfpduWi_UOqgda8XCKbvH0gZaN65ARtrz8=w1280" alt="Benchmark Case 27"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>PiMRef - Detecting and Explaining Ever-Evolving Phishing Emails</p>
+        <p><a href="index.html">Back to Home</a></p>
+    </footer>
+
+    <script>
+        function toggleNav() { document.getElementById('navMenu').classList.toggle('active'); }
+        document.addEventListener('click', function(event) {
+            const navMenu = document.getElementById('navMenu');
+            const navToggle = document.querySelector('.nav-toggle');
+            if (!navMenu.contains(event.target) && !navToggle.contains(event.target)) navMenu.classList.remove('active');
+        });
+    </script>
+</body>
+</html>
